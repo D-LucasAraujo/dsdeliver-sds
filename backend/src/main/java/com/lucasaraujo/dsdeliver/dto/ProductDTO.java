@@ -8,7 +8,7 @@ public class ProductDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private long id;
+	private Long id;
 	private String name;
 	private double price;
 	private String description;
@@ -18,7 +18,7 @@ public class ProductDTO implements Serializable{
 		
 	}
 
-	public ProductDTO(long id, String name, double price, String description, String imageUri) {
+	public ProductDTO(Long id, String name, double price, String description, String imageUri) {
 		this.id = id;
 		this.name = name;
 		this.price = price;
@@ -34,11 +34,11 @@ public class ProductDTO implements Serializable{
 		imageUri = entity.getImageUri();
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
